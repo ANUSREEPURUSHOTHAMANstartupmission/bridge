@@ -1,0 +1,271 @@
+
+
+
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+import Whyget from "../components/Whyget.astro";
+
+
+import { categories } from "../components/categories.js";
+
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+
+
+
+<Navbar client:load></Navbar>
+<!-- HERO -->
+
+<section class="  pt-24 overflow-hidden">
+
+
+    <div class="max-w-7xl mx-auto px-10">
+
+        <div class="relative h-screen">
+
+            <div class="relative z-30 pt-16 max-w-[650px]">
+
+                <h1 class="lg:text-9xl text-6xl font-black leading-none text-[#FD226A]">
+                    BRIDGE
+                </h1>
+
+                <p class="text-gray-600  mt-2">
+                    Business Revolution through Innovation,
+                    Digital Growth & Enterprise
+                </p>
+
+                <h2 class="mt-10 text-[24.7px] font-bold leading-tight text-gray-900">
+                   India Launches Its Most Powerful Corporate-Startup Convergence Programme 
+                </h2>
+
+                <p class="mt-8 text-[17.9px] text-[#7C529C] leading-relaxed max-w-xl">
+                  50 Crore+ Corporates & MSMEs Set to Adopt, Invest & Acquire Next-Generation Startup Technologies
+                </p>
+
+            </div>
+
+            <div class="md:absolute -right-40 -top-10">
+                <img src="/img/Group 14.svg" alt="bridge" class="w-full object-contain">
+            </div>
+
+            <!-- STATS -->
+
+            <div class="stats-wrapper">
+
+                <div class="max-w-6xl  pt-10">
+
+                    <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+
+                        <div class="bg-white rounded-[24px] shadow-lg p-8 text-center">
+                            <div class="w-14 h-14 rounded-full bg-[#FD226A] text-white mx-auto flex items-center justify-center text-2xl">
+                                ₹
+                            </div>
+
+                            <h3 class="text-3xl font-bold mt-5">
+                                50 Cr+
+                            </h3>
+
+                            <p class="text-xs text-gray-500 mt-2">
+                                Revenue Eligibility
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-[24px] shadow-lg p-8 text-center">
+                            <div class="w-14 h-14 rounded-full bg-[#FD226A] text-white mx-auto flex items-center justify-center text-2xl">
+                                ₹
+                            </div>
+
+                            <h3 class="text-3xl font-bold mt-5">
+                                50 Cr+
+                            </h3>
+
+                            <p class="text-xs text-gray-500 mt-2">
+                                Revenue Eligibility
+                            </p>
+                        </div>
+
+                         <div class="bg-white rounded-[24px] shadow-lg p-8 text-center">
+                            <div class="w-14 h-14 rounded-full bg-[#FD226A] text-white mx-auto flex items-center justify-center text-2xl">
+                                ₹
+                            </div>
+
+                            <h3 class="text-3xl font-bold mt-5">
+                                50 Cr+
+                            </h3>
+
+                            <p class="text-xs text-gray-500 mt-2">
+                                Revenue Eligibility
+                            </p>
+                        </div>
+
+                         <div class="bg-white rounded-[24px] shadow-lg p-8 text-center">
+                            <div class="w-14 h-14 rounded-full bg-[#FD226A] text-white mx-auto flex items-center justify-center text-2xl">
+                                ₹
+                            </div>
+
+                            <h3 class="text-3xl font-bold mt-5">
+                                50 Cr+
+                            </h3>
+
+                            <p class="text-xs text-gray-500 mt-2">
+                                Revenue Eligibility
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTENT SECTION -->
+
+<section class=" pt-20 pb-24">
+
+    <div class="max-w-7xl mx-auto px-10 grid md:grid-cols-2 grid-cols-1 gap-10">
+        <div>
+            <p class="text-gray-700 leading-8 text-justify">
+                BRIDGE is India's first structured corporate-startup convergence initiative for corporates and MSMEs with annual revenues of INR 50 Crore and above. We create a governed ecosystem where established businesses can adopt, invest in, or acquire breakthrough technologies from India's most promising startups.
+            </p>
+            <a href="https://drive.google.com/file/d/1WmNza7K9cv7CxQxeEFcuvB6FuY6DQvLX/view?usp=sharing" target="_blank" class="inline-flex items-center gap-4 mt-10 text-2xl font-semibold text-indigo-900">
+                Read the full press release
+                <span>→</span>
+            </a>
+        </div>
+
+        <div class="bg-white rounded-[30px] shadow-xl p-10">
+            <div class="text-5xl text-indigo-900" style="line-height: 0">
+                “</div>
+            <p class=" leading-8 font-medium">
+                We are not just connecting startups with corporates.
+                We are building the infrastructure for India's next
+                industrial revolution. BRIDGE is where ambition
+                meets execution.
+            </p>
+            <p class="mt-8 text-indigo-900 font-semibold">
+                — Programme Director, BRIDGE
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="pb-24 bg-[#fafafa]">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="grid lg:grid-cols-2 gap-6 items-start">
+            <div class="bg-white rounded-xl border border-gray-300 p-6 shadow-sm">
+                <h2 class="text-2xl font-bold text-[#FD226A] uppercase pb-4">
+                    Three Ways To Engage
+                </h2>
+                <div class="border rounded-xl flex items-center gap-3 mb-5 hover:shadow-md transition">
+                    <div class="w-20 h-20 rounded-lg bg-green-500 flex items-center justify-center text-white text-4xl p-2">
+                        <!-- ⚙️ -->
+                    </div>
+                    <div class="md:flex-row flex flex-col items-center justify-center gap-3 md:p-0 p-2">
+                        <h3 class="text-xl font-semibold">
+                            ADOPT
+                        </h3>
+                        <p class="text-gray-700 text-sm">
+                            Integrate startup technology into your operations
+                            for immediate efficiency and revenue gains.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="border rounded-xl flex items-center gap-3 mb-5 hover:shadow-md transition">
+                    <div class="w-20 h-20 rounded-lg bg-orange-500 flex items-center justify-center text-white text-4xl">
+                        <!-- 💰 -->
+                    </div>
+                    <div class="md:flex-row flex flex-col items-center justify-center gap-3 md:p-0 p-2">
+                        <h3 class="text-xl font-semibold">
+                            INVEST
+                        </h3>
+                        <p class="text-gray-700 text-sm">
+                            Back high-potential startups in your sector
+                            with end-to-end diligence support.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="border rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="w-20 h-20 rounded-lg bg-purple-600 flex items-center justify-center text-white text-4xl p-1">
+                        <!-- 🤝 -->
+                    </div>
+                    <div class="md:flex-row flex flex-col items-center justify-center gap-3 md:p-0 p-2">
+                        <h3 class="text-xl font-semibold">
+                            ACQUIRE
+                        </h3>
+                        <p class="text-gray-700 text-sm">
+                            Own the technology powering your growth
+                            through structured acquisition support.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-purple-600 uppercase leading-tight">
+                    Why Now? Why BRIDGE?
+                </h2>
+                <p class="mt-4 text-gray-800 ">
+                    Digital disruption is a present reality.
+                    The next 24 months will separate leaders from laggards.
+                    BRIDGE is a structured growth engine with measurable
+                    outcomes, expert support and a curated network
+                    to help you stay ahead.
+                </p>
+                <ul class="mt-4 space-y-2">
+
+                    <li class="flex gap-4 items-start">
+                        <span class="text-[#FD226A] text-xl mt-1">•</span>
+                        <span class="text-base">
+                            Vetted startups. Real-world solutions.
+                        </span>
+                    </li>
+
+                    <li class="flex gap-4 items-start">
+                        <span class="text-[#FD226A] text-xl mt-1">•</span>
+                        <span class="text-base">
+                            AI-assisted matching for strategic fit.
+                        </span>
+                    </li>
+
+                    <li class="flex gap-4 items-start">
+                        <span class="text-[#FD226A] text-xl mt-1">•</span>
+                        <span class="text-base">
+                            End-to-end support to ensure deals close.
+                        </span>
+                    </li>
+
+                </ul>
+
+                <button
+                    class="mt-10 bg-[#FD226A] hover:bg-pink-600 text-white font-semibold px-10 py-4 rounded-lg text-xl transition">
+                    Apply or Partner
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</Layout>

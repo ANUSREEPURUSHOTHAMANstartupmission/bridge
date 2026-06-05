@@ -1,0 +1,71 @@
+---
+const { title } = Astro.props;
+
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+
+const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
+const url = "https://startupmission.kerala.gov.in/";
+
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BRIDGE Programme</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style is:global>
+
+
+/* .hero-circle{
+    position:absolute;
+    width:850px;
+    height:850px;
+    border-radius:999px;
+    background:#F8E6EA;
+    right:-250px;
+    top:-120px;
+    z-index:0;
+} */
+
+.bridge-image{
+    position:absolute;
+    right:-180px;
+    top:20px;
+    width:950px;
+    z-index:10;
+}
+
+.stats-wrapper{
+    position:absolute;
+    left:0;
+    width:100%;
+    z-index:30;
+}
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+</style>
+
+</head>
+
+<body class="bg-[#fafafa] montserrat overflow-x-hidden">
+
+	<slot />
+
+</body>
+</html>
